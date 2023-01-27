@@ -1,1 +1,1 @@
-# Exeption clauses
+# Exceptions in pyton
