@@ -1,4 +1,4 @@
-                                                                                                                                                                                                                                    #!/usr/bin/python3
+#!/usr/bin/python3
 """A class with validated size, a public instance, getter and setter"""
 
 
