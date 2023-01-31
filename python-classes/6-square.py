@@ -41,7 +41,9 @@ class Square:
         'ammender'
         if type(value) != int or len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif any(type(i) != int for i in self.__position) or (j < 0 for j in value):
+        elif any(type(i) != int for i in self.__position) or any(j < 0 for j in value):
+            raise TypeError('position must be a tuple of 2 positive integers')
+        elif any(type(j) != int for j in value):
             raise TypeError('position must be a tuple of 2 positive integers')
         else:
             self.__position = value
