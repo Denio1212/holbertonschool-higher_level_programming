@@ -74,6 +74,7 @@ Nan passed as div:
 	... ]
 	>>> matrix_divided(matrix, float('nan'))
 	[[nan, nan, nan], [nan, nan, nan]]
+
 No div:
 	>>> matrix= [
         ...     [3, 5, 6],
