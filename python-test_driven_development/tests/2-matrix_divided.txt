@@ -1,0 +1,60 @@
+The ``2-matrix_divided`` moule
+===============================
+
+Using ``matrix_divided``
+------------------------
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Normal list:
+	>>> matrix = [
+	...     [1, 2, 4],
+	...     [3, 5, 8]
+	... ]
+	>>> matrix_divided(matrix, 2)
+	[[0.5, 1.0, 2.0], [1.5, 2.5, 4.0]]
+
+
+List with floats:
+	>>> matrix = [
+	...     [1.2, 4, 3.3],
+	...     [2.2, 5.6, 21]
+	... ]
+	>>> matrix_divided(matrix, 2)
+	[[0.6, 2.0, 1.65], [1.1, 2.8, 10.5]]
+
+Contents not floats or ints:
+	>>> matrix = [
+	...     ['hello', 2, 'Hi'],
+	...     {"2", 5, 'non'}
+	... ]
+	>>> matrix_divided(matrix, 2.2)
+	Traceback (most recent call last):	
+	TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+List lengths being different:
+	>>> matrix = [
+	...     [2, 4, 6, 8],
+	...     [10, 12, 14]
+	... ]
+	>>> matrix_divided(matrix, 2)
+	Traceback (most recent call last):
+	TypeError: Each row of the matrix must have the same size
+
+Division by string:
+	>>> matrix = [
+	...     [1.2, 4, 3.3],
+	...     [2.2, 5.6, 21]
+	... ]
+	>>> matrix_divided(matrix, '2')
+	Traceback (most recent call last):
+	TypeError: div must be a number
+
+Division by 0:
+	>>> matrix = [
+	...     [1.2, 4, 3.3],
+	...     [2.2, 5.6, 21]
+	... ]
+	>>> matrix_divided(matrix, 0)
+	Traceback (most recent call last):
+	ZeroDivisionError: division by zero
