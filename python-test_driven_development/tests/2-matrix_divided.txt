@@ -58,3 +58,33 @@ Division by 0:
 	>>> matrix_divided(matrix, 0)
 	Traceback (most recent call last):
 	ZeroDivisionError: division by zero
+
+Divided by inf:
+	>>> matrix = [ 
+	...	[1, 2, 3],
+	...	[4, 3, 5]
+	... ]
+	>>> matrix_divided(matrix, float('inf'))
+	[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+Nan passed as div:
+	>>> matrix = [
+	...	[3, 5, 6],
+	...	[1, 2, 3]
+	... ]
+	>>> matrix_divided(matrix, float('nan'))
+	[[nan, nan, nan], [nan, nan, nan]]
+No div:
+	>>> matrix= [
+        ...     [3, 5, 6],
+        ...     [1, 2, 3]
+        ... ]
+	>>> matrix_divided(matrix, None)
+	Traceback (most recent call last):
+	TypeError: div must be a number
+
+
+
+
+
+
