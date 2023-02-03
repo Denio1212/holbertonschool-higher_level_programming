@@ -2,7 +2,8 @@
 
 
 def add_integer(a, b=98):
-    ''' Adds 2 ints together and returns summary '''
+    ''' Adds 2 ints together and returns summary
+    '''
     if type(a) is float:
         a = int(a)
     elif type(a) is not int:

@@ -28,7 +28,7 @@ b is string:
 	TypeError: b must be an integer
 
 a is string:
-	>> add_integer('Hi', 4)
+	>>> add_integer('Hi', 4)
 	Traceback (most recent call last):
 	TypeError: a must be an integer
 
@@ -38,11 +38,16 @@ Name Error:
 	TypeError: a must be an integer
 
 Empty Function:
-	>> add_integer()
+	>>> add_integer()
 	Traceback (most recent call last):
 	TypeError: add_integer() missing 1 required positional argument: 'a'
 
 Not a number:
-	>> add_integer(4, float('nan'))
+	>>> add_integer(4, float('nan'))
 	Traceback (most recent call last):
 	ValueError: cannot convert float NaN to integer
+
+Adding infinity and beyond:
+	>>> add_integer(2, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
