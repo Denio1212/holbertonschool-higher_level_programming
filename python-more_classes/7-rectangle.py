@@ -81,7 +81,7 @@ class Rectangle:
         if self.__width > 0 and self.__height > 0:
             for i in range(self.__height):
                 for place in range(self.__width):
-                    seperator += '#'
+                    seperator += str(self.print_symbol)
                 seperator += '\n'
         return seperator[: -1]
 
