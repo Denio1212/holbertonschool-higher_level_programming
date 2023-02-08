@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+""" Rectangle that counts itself
 """
 
 
