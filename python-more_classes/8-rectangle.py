@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+""" Added a comparer between 2 rectangles
 """
 
 
