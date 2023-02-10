@@ -29,7 +29,7 @@ class Rectangle(BaseGeometry):
         """
         returns the object as a nice str
         """
-        return "{{}/{}".format(self.__width, self.__height)
+        return "{}/{}".format(self.__width, self.__height)
 
     def print(self):
         """
