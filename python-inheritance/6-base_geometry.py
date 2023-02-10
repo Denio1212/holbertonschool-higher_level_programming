@@ -9,4 +9,4 @@ class BaseGeometry:
     A class with an aream method
     """
     def area(self):
-        raise Exeption("area() is not implemented")
+        raise Exception("area() is not implemented")
