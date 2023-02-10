@@ -29,10 +29,4 @@ class Rectangle(BaseGeometry):
         """
         returns the object as a nice str
         """
-        return "{}/{}".format(self.__width, self.__height)
-
-    def print(self):
-        """
-        Prints instead of returning
-        """
-        print("[Rectangle] {}/{}".format(self.__width, self.__height))
+        return "[Rectangle] {}/{}".format(self.__width, self.__height)
