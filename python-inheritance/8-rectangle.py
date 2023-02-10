@@ -13,7 +13,7 @@ class Rectangle(BaseGeometry):
         """
         Famous constructor
         """
-        super().integer_validator(width, "height")
-        super().integer_validator("height", width)
+        super().integer_validator("width", width)
+        super().integer_validator("height", height)
         self.__height = height
         self.__width = width
