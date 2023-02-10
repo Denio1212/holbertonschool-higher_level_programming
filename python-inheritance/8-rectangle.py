@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 A class named rectangle that inherits from BaseGeometry
 """
