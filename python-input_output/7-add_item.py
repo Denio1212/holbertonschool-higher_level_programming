@@ -2,7 +2,6 @@
 """
 Add the arguments. and then saves them to a file
 """
-import json
 from os import path
 from sys import argv
 save_to_json_file = __import__("5-save_to_json_file").save_to_json_file
