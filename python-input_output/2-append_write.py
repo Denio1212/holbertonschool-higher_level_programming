@@ -8,5 +8,5 @@ def append_write(filename="", text=""):
     """
     The function to append at EOF
     """
-    with open(filename, mode="w", encoding="utf-8") as f:
+    with open(filename, mode="a", encoding="utf-8") as f:
         return f.write(text)
