@@ -23,7 +23,7 @@ class Student:
         if attrs is not None:
             new_dict = {}
             for i in attrs:
-                if i in self.__dict__:
+                for i in self.__dict__:
                     new_dict[i] = self.__dict__[i]
             return new_dict
         return self.__dict__
