@@ -25,5 +25,5 @@ class Student:
             for i in attrs:
                 if i in self.__dict__:
                     new_dict[i] = self.__dict__[i]
-                return new_dict
-            return self.__dict__
+            return new_dict
+        return self.__dict__
