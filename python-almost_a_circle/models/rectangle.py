@@ -97,9 +97,9 @@ class Rectangle(Base):
         """
         for i in range(self.y):
             print()
-        for i in range(self.__height)
+        for i in range(self.__height):
             for i in range(self.__x):
                 print(" ", end="")
-            for i in range(self.__width)
+            for i in range(self.__width):
                 print("#", end="")
             print()
