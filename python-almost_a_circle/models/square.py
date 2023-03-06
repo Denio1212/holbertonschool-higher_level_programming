@@ -2,7 +2,7 @@
 """
 square model using the base blueprint/template
 """
-from rectangle import Rectangle
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
