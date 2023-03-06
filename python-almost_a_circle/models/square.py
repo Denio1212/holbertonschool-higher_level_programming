@@ -20,17 +20,6 @@ class Square(Rectangle):
         """
         super().__init__(size, size, x, y, id)
 
-    @property
-    def size(self):
-        """
-        size editor
-        """
-        return self.width
-
-    @size.setter
-    def size(self, value):
-        self.width = value
-
     def __str__(self):
         """
         changes the output method of the string method
