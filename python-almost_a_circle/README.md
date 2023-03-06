@@ -24,3 +24,12 @@ else:
 ```
 **That concludes the first/second tasks**
 
+## Moving on to task 3(named 2).
+
+**Here we just needed to make a class that
+inherits from base class and adds the features of a rectangle.**
+
+>Using the init command we can declare the class constructors and for each one we need to make a getter and setter that changes
+> its value to the one given.
+
+* That's it for task 2
