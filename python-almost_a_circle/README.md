@@ -57,4 +57,18 @@ def area(self):
 def __str__(self):
 return "...".format() -> if needed
 ```
+# Task 7
+* Just adds the requirement for the x and y attributes
 
+# Task 8
+> Now this is interesting.
+> Here we are required to add a public method to assign an argument to each value
+>> Using the  *args.
+>>> A variable designed to take arguments passed through on function declaration and assign them in order
+> to the corresponding methods.
+
+# Task 9
+* We now need to use **kwargs too
+* >Kwargs, shortened from key word argument.
+  > >>Is a way to change arguments corresponding to their key words.
+  > Basically making a list which holds all key words and then applies values to them without the need to order it!
