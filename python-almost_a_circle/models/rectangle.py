@@ -2,7 +2,7 @@
 """
 makes an inheritant rectangle
 """
-from models.Base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -31,6 +31,7 @@ class Rectangle(Base):
         assigner of value
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         if type(value) is not int:
