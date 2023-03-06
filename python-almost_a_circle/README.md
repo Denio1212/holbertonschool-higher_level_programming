@@ -33,3 +33,28 @@ inherits from base class and adds the features of a rectangle.**
 > its value to the one given.
 
 * That's it for task 2
+
+### Task 3 has a couple of validations added, nothing to much.
+
+## Task 4 wants me to make the famous area method, simple
+```
+def area(self):
+    return self.{} * self.{}
+```
+**The {} are the variable names.**
+
+# Task 5 requires a display method
+
+> The display method prints out the shape of
+> the object with a given symbol.
+> The code is under the display method
+.
+
+# Task 6
+* Requires a string editing of the output
+> Luckily this is done by using the string method __str__
+```
+def __str__(self):
+return "...".format() -> if needed
+```
+
