@@ -9,7 +9,7 @@ class Square(Rectangle):
     """
     Our beautiful square
     """
-    def __int__(self, size, x=0, y=0, id=None):
+    def __int__(self, size,  x=0, y=0, id=None):
         """
         il constructtoro
         attributes:
@@ -18,7 +18,7 @@ class Square(Rectangle):
             y -> coord for height
             id -> driver's licence
         """
-        super().__init__(size, size, x, y, id)
+        super().__init__(size, x, y, id)
 
     @property
     def size(self):
