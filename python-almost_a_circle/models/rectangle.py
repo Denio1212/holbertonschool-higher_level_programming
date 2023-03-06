@@ -2,8 +2,6 @@
 """
 makes an inheritant rectangle
 """
-import codecs
-
 from models.Base import Base
 
 
