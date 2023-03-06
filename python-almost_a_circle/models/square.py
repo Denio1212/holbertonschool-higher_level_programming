@@ -50,4 +50,4 @@ class Square(Rectangle):
         else:
             for a, b in kwargs.items():
                 if hasattr(self, a):
-                    setattr(self. a, b)
+                    setattr(self, a, b)
