@@ -80,3 +80,23 @@ return "...".format() -> if needed
 
 > A few minor differences but it was the same stuff again
 
+# Task 13 & 14
+> Requires you to make a public method to returns a dictionary
+> representation of both the rectangle and square objects
+
+* To write this we need a index and a finder as I call it
+* and then since the __dict__ writes everything with '__'
+* surrounding it, we can use split to separate each one.
+* Afterwards we just assign every index to the separate dictionary we made.
+```
+def whatever(self):
+  new_dict = {}
+
+  for idx, key_finder in self.__dict__.items():
+      key = idx.split("__")[-1] -> to split 1 before these
+      new_dict[key] = key_finder
+  return new_dict
+```
+14 is the same for the square, using the super
+
+# From 15 onwards it's just JSON stuff
