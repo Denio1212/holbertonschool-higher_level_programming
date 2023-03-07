@@ -59,8 +59,8 @@ class Base:
         returns an instance with predefined attributes
         """
         if cls.__name__ == "Rectangle":
-            updated = cls(1, 1)
+            new = cls(1, 1)
         else:
-            cls(1)
-        updated.update(dictionary)
-        return updated
+            new = cls(1)
+        new.update(dictionary)
+        return new
