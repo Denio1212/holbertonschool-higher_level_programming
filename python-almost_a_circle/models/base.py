@@ -52,4 +52,4 @@ class Base:
         if json_string is not None or json_string != "":
             return json.loads(json_string)
         else:
-            return []
+            return list()
