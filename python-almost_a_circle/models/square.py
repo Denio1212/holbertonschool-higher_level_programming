@@ -51,3 +51,12 @@ class Square(Rectangle):
             for a, b in kwargs.items():
                 if hasattr(self, a):
                     setattr(self, a, b)
+
+        def to_dictionary(self):
+            """
+            returns the dictionary representation of the square
+            """
+            square_dict = super().to_dictionary()
+            square_dict["size"] = square_dict["width"]
+            del square_dict['height'], square_dict['width']
+            return square_dict
