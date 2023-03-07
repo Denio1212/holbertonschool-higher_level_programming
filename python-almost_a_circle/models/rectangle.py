@@ -125,3 +125,14 @@ class Rectangle(Base):
             for a, b in kwargs.items():
                 if hasattr(self, a):
                     setattr(self, a, b)
+
+    def to_dictionary(self):
+        """
+        returns the dict representation of the rectangle
+        """
+        new_dict = {}
+
+        for idx, key_finder in self.__dict__.items():
+            key = idx.split("__")[-1]
+            new_dict[key] = key_finder
+            return new_dict
