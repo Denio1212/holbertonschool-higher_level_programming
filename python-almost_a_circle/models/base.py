@@ -65,3 +65,17 @@ class Base:
             new = cls(1)
         new.update(**dictionary)
         return new
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        returns a list of instances
+        """
+        file = cls.__name__ + ".json"
+        b_list = []
+        if path.isfile(file):
+            with open(file) as f:
+                output = cls.from_json_string(f.read())
+            for i in output:
+                b_list.append(cls.create(**i))
+        return b_list
