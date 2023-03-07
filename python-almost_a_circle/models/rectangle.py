@@ -135,4 +135,4 @@ class Rectangle(Base):
         for idx, key_finder in self.__dict__.items():
             key = idx.split("__")[-1]
             new_dict[key] = key_finder
-            return new_dict
+        return new_dict
