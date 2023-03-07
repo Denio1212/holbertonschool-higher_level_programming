@@ -3,6 +3,7 @@
 The base class that will be the blueprint
 """
 import json
+from os import path
 
 
 class Base:
