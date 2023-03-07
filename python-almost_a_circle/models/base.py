@@ -58,7 +58,7 @@ class Base:
         """
         returns an instance with predefined attributes
         """
-        if cls.__name__ = "Rectangle":
+        if cls.__name__ == "Rectangle":
             updated = cls(1, 1)
         else:
             cls(1)
