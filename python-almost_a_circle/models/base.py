@@ -65,18 +65,3 @@ class Base:
             new = cls(1)
         new.update(dictionary)
         return new
-
-    def update(self, *args, **kwargs):
-        """
-        assigns arguments to attributes
-        """
-        if args:
-            attributes = ["id", "width", "height", "x", "y"]
-            for i, e in enumerate(args):
-                if i < len(args):
-                    if i < len(attributes):
-                        setattr(self, attributes[i], e)
-        else:
-            for a, b in kwargs.items():
-                if hasattr(self, a):
-                    setattr(self, a, b)
