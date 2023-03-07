@@ -52,4 +52,3 @@ class Base:
         if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
-
