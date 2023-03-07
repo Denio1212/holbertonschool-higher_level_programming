@@ -72,3 +72,11 @@ return "...".format() -> if needed
 * >Kwargs, shortened from key word argument.
   > >>Is a way to change arguments corresponding to their key words.
   > Basically making a list which holds all key words and then applies values to them without the need to order it!
+
+# Task 10, 11, 12
+
+* These tasks were pretty similar to the previous ones.
+**The difference was that i needed to make a square now**
+
+> A few minor differences but it was the same stuff again
+
