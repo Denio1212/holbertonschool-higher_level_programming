@@ -49,6 +49,6 @@ class Base:
         """
         loads a list from json_strings
         """
-        if json_string is None or json_string == "":
-            return []
-        return json.loads(json_string)
+        if json_string is not None or json_string != "":
+            return json.loads(json_string)
+        return []
