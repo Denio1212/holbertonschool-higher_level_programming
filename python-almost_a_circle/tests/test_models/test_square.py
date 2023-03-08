@@ -138,10 +138,8 @@ class TestSquare(unittest.TestCase):
         output = StringIO()
         sys.stdout = output
         r1 = Square(10, 10, 10)
-        r1.update(89, 3, 4, 5, 6)
-        print(r1)
-        sys.stdout = sys.__stdout__
-        assert output.getvalue() == "[Square] (89) 4/5 - 3\n"
+        with self.assertRaises(IndexError):
+            r1.update(89, 3, 3, 5, 6)
 
     def test_update_no_param(self):
         """Update with extra parameters"""
