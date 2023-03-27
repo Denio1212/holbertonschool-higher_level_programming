@@ -1,4 +1,4 @@
---Listing all shows that have a genre linked
+-- Listing all shows that have a genre linked
 
 SELECT tv_shows.title, tv_show_genres.genre_id
 FROM tv_shows
