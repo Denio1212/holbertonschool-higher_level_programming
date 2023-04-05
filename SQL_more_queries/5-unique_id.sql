@@ -1,6 +1,6 @@
 -- The id must be unique
 
 CREATE TABLE IF NOT EXISTS unique_id (
-    int DEFAULT 1 UNIQUE,
+    id int DEFAULT 1 UNIQUE,
     name VARCHAR(256)
 );
