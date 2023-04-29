@@ -12,12 +12,12 @@ if __name__ == "__main__":
     with MySQLdb.connect(host="localhost", user=argv[1], password=argv[2],
                          database=argv[3], charset="utf8", port=3306) as db:
         cursor = db.cursor()
-        executee = "SELECT *" \
+        executee = "SELECT cities.*" \
                    " FROM cities" \
                    " JOIN states" \
                    " ON cities.state_id = states.id" \
                    " WHERE states.name=%s ORDER BY cities.id ASC"
-        cursor.execute(executee, ('%' + inputs + '%',))
+        cursor.execute(executee, (inputs,))
         content = cursor.fetchall()
         outcome = []
         for row in content:
