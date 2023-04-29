@@ -22,4 +22,4 @@ if __name__ == "__main__":
         outcome = []
         for row in content:
             outcome.append(row[2])
-            print(", ".join(outcome))
+        print(", ".join(outcome))
