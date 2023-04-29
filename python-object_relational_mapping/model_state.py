@@ -8,8 +8,8 @@ Base = declarative_base()
 
 
 class State(Base):
-    """
+    '''
     inherits from the base class
-    """
+    '''
     id = Column(Integer, nullable=False, primary_key=True, autoincrement=True)
     name = Column(String(50), nullable=False)
