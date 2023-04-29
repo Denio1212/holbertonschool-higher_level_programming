@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-The model of a state
+The model of a state.
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
