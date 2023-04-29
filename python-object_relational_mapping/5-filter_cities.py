@@ -13,10 +13,10 @@ if __name__ == "__main__":
                          database=argv[3], charset="utf8", port=3306) as db:
         cursor = db.cursor()
         executee = "SELECT *" \
-                   "FROM cities" \
-                   "JOIN states" \
-                   "ON cities.state_id = states.id" \
-                   "WHERE states.name=%s ORDER BY cities.id ASC"
+                   " FROM cities" \
+                   " JOIN states" \
+                   " ON cities.state_id = states.id" \
+                   " WHERE states.name=%s ORDER BY cities.id ASC"
         cursor.execute(executee, ('%' + inputs + '%',))
         content = cursor.fetchall()
         outcome = []
