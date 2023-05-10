@@ -1,6 +1,14 @@
 #!/usr/bin/python3
 """
 Lists all state objects from the usa database
+new concepts ***
+pool_pre_ping -> makes sure that the connection doesn't cut out
+randomly
+->>> sql alchemy stuff
+create_engine -> makes an engine that runs a mysql server.
+create_all -> makes tables in sqlalchemy when called
+it makes all tables defined in METADATA
+METADATA -> holds all data concerning tables
 """
 from sqlalchemy import create_engine
 
