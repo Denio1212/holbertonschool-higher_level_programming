@@ -3,7 +3,6 @@
 lists all objects containing a in the dbase
 """
 
-
 if __name__ == "__main__":
     from sys import argv
     from sqlalchemy import create_engine
@@ -16,5 +15,6 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    for data in session.query(State).filter(State.name.like("%a%")):
+    for data in session.query(State).filter(State.name.like("%a%")). \
+            order_by(State.id).all():
         print("{}: {}".format(data.id, data.name))
