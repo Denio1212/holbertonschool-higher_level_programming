@@ -1,6 +1,13 @@
 #!/usr/bin/python3
 """9-model_state_filter_a module
 lists all objects containing a in the dbase
+
+filter -> filters the result, in this case state.name.like
+asks for any state that has a
+% -> means any before or after
+%a -> ending with a
+a% -> starting with a
+%a% -> a anywhere
 """
 
 if __name__ == "__main__":
