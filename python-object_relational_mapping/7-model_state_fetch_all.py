@@ -9,6 +9,8 @@ create_engine -> makes an engine that runs a mysql server.
 create_all -> makes tables in sqlalchemy when called
 it makes all tables defined in METADATA
 METADATA -> holds all data concerning tables
+sessionmaker ->> creates a function that returns session
+objects when called
 """
 
 if __name__ == "__main__":
@@ -18,7 +20,7 @@ if __name__ == "__main__":
     from sqlalchemy import create_engine
 
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(argv[1],
-                            argv[2],argv[3]), pool_pre_ping=True)
+                                                                       argv[2], argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
     Session = sessionmaker(bind=engine)
