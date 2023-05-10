@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """model_state module
-Creating the state class
+The base module
+Base = declarative_base()
 """
 
 from sqlalchemy import Column, Integer, String
