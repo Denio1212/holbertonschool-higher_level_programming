@@ -26,4 +26,3 @@ if __name__ == "__main__":
     for data in session.query(State).order_by(State.id).all():
         print("{}:{}".format(data.id, data.name))
     session.close()
-
