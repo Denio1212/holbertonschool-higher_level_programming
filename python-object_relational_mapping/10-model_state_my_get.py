@@ -5,11 +5,12 @@ The same as the previous but with changing arguments
 nothing too special in this one
 """
 
+
 if __name__ == "__main__":
     from sys import argv
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
-    from model_state import Base, State
+    from model_state import State, Base
 
     engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(argv[1],
                            argv[2], argv[3]), pool_pre_ping=True)
@@ -17,8 +18,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    for data in session.query(State).filter(State.name.like('%{}%').format(argv[4])).\
-            order_by(State.id).all():
+    for data in session.query(State).filter_by(name=argv[4]):
         print(data.id)
         exit()
     print("Not found")
