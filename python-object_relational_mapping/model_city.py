@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """model_city module
 Contains the definition of a city
-
 Foreign key that connects to the states.id and everything
 else is similar to the state class
 """
