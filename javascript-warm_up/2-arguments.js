@@ -1,4 +1,4 @@
-	#!/usr/bin/node
+#!/usr/bin/node
 
 	/* The message is as large as your imagination */
 	const Countargs = process.argv.length - 2;
