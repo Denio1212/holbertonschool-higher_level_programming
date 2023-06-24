@@ -1,6 +1,6 @@
 #!/usr/nbin/node
 
-/* A litle harder but still manageble */
+/* A litle harder but still manageable */
 
 module.export = class Rectangle {
   constructor (w, h) {
