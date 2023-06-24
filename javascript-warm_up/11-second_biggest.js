@@ -7,5 +7,5 @@ if (process.argv.length == 2 || process.argv.length == 3) {
   const list = process.argv.slice(2).sort((a, b) => a - b);
   const len = list.length;
 
-  console.log(list[len - 1]);
+  console.log(list[len - 2]);
 }
