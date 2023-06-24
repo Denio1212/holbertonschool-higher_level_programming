@@ -1,4 +1,4 @@
-#!/usr/nbin/node
+#!/usr/bin/node
 
 /* A litle harder but still manageable */
 
