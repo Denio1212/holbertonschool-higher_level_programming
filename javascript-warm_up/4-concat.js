@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-/* Prints 2 arguments x is y */
+/* Prints 2 arguments x is z */
 if (!process.argv[2]) {
   console.log('undefined is undefined');
 } else {
