@@ -12,6 +12,6 @@ request.get(url, (error, response, body) => {
     console.error('Error:', error);
   } else {
     const Data = JSON.parse(body);
-    console.log(movieData.title);
+    console.log(Data.title);
   }
 });
