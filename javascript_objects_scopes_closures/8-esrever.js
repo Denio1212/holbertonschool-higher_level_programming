@@ -10,5 +10,5 @@ exports.esrever = function (list) {
     list[i] = list[j];
     list[j] = tmp;
   }
-   return (list);
+  return (list);
 };
