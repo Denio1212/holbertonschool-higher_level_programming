@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-/* I messed up on 2 */
+/* Messed up at 2 */
 
 module.exports = class Rectangle {
   constructor (w, h) {
