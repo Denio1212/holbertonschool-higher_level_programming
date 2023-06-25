@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 /** prints number of arguments already printed
- * Including the new argument 
+ * Including the new argument
 */
 
 let count = 0;
