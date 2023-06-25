@@ -5,7 +5,7 @@
  * Title depending on the given int
  */
 const request = require('request');
-const url = 'https://swapi-api.hbtn.io/api/films/${procces.argv[2]}';
+const url = 'https://swapi-api.co/api/films/${procces.argv[2]}';
 
 request.get(url, (error, response, body) => {
   if (error) {
