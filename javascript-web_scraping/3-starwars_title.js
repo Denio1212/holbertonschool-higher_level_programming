@@ -4,7 +4,7 @@
  * Prints the name of the star wars
  * Title depending on the given int
  */
-
+const request = require('request');
 const url = 'https://swapi-api.hbtn.io/api/films/${procces.argv[2]}';
 
 request.get(url, (error, response, body) => {
